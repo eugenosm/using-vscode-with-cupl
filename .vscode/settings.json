@@ -1,0 +1,30 @@
+{
+    "cupl":{
+        // Path to cupl command line tools
+        "path": "H:\\Wincupl\\Shared",
+        // You can select using CUPL library 
+        "lib": "Atmel.dl", 
+        // "lib": "cupl.dl",
+    },
+
+    // Sample of color customizing. change colors of operators (used .arithmetic token) and punctuators (used .boolean.cupl)
+    // Tokens for other syntax elements you can see if press Ctr+Shift+P and then select "Developers: Inspect Editor Tokens and Scopes"
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope":"keyword.operator.arithmetic",
+                "settings": {
+                    "foreground": "#00aeff",
+                    "fontStyle": "bold"
+                }
+            },{
+                "scope":"keyword.operator.boolean.cupl",
+                "settings": {
+                    "foreground": "#90b2f1f8",
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    },
+
+}
